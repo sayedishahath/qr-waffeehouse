@@ -12,10 +12,10 @@ function openWhatsapp() {
     window.open(whatsappUrl, '_blank');
 }
 
-// Function to open menu (you can replace with actual URL)
+// Function to open menu PDF
 function openMenu() {
-    // Replace with your actual menu URL or PDF
-    const menuUrl = 'https://app.qaayima.com/restaurant/waffeehousesharjah';
+    // Open the PDF menu file
+    const menuUrl = 'Waffee House_Menu-01 (1).pdf';
     window.open(menuUrl, '_blank');
 }
 

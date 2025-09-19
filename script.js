@@ -8,7 +8,7 @@ function openWebsite() {
 // Function to open WhatsApp
 function openWhatsapp() {
     // Replace with your actual WhatsApp URL
-    const whatsappUrl = 'https://wa.me/+97152732369';
+    const whatsappUrl = 'https://wa.me/+971527322369';
     window.open(whatsappUrl, '_blank');
 }
 

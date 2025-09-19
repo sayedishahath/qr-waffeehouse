@@ -1,7 +1,7 @@
 // Function to open website (you can replace with actual URL)
 function openWebsite() {
     // Replace with your actual website URL
-    const websiteUrl = 'https://your-website.com';
+    const websiteUrl = 'https://waffeehouse.in';
     window.open(websiteUrl, '_blank');
 }
 

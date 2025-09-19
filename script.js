@@ -15,7 +15,7 @@ function openWhatsapp() {
 // Function to open menu PDF
 function openMenu() {
     // Open the PDF menu file
-    const menuUrl = 'Waffee House_Menu-01 (1).pdf';
+    const menuUrl = 'WaffeeHouseMenu.pdf';
     window.open(menuUrl, '_blank');
 }
 

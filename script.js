@@ -33,4 +33,11 @@ function openInstagram() {
     window.open(instagramUrl, '_blank');
 }
 
+// Function to open TikTok
+function openTiktok() {
+    // Replace with your actual TikTok URL
+    const tiktokUrl = 'https://www.tiktok.com/@waffeehouse?_t=ZS-8zrSwhUIrie&_r=1';
+    window.open(tiktokUrl, '_blank');
+}
+
 // Interactive effects removed for cleaner design

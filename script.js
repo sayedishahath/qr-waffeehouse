@@ -4,10 +4,12 @@ function openWebsite() {
     const websiteUrl = 'https://waffeehouse.in';
     window.open(websiteUrl, '_blank');
 }
-function openWebsite() {
-    // Replace with your actual website URL
-    const websiteUrl = 'https://wa.me/+97152732369';
-    window.open(websiteUrl, '_blank');
+
+// Function to open WhatsApp
+function openWhatsapp() {
+    // Replace with your actual WhatsApp URL
+    const whatsappUrl = 'https://wa.me/+97152732369';
+    window.open(whatsappUrl, '_blank');
 }
 
 // Function to open menu (you can replace with actual URL)

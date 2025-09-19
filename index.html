@@ -10,37 +10,64 @@
 <body>
     <div class="container">
         <header>
-            <h1 class="logo">QR Waffee House</h1>
-            <p class="tagline">Delicious Waffles & More</p>
+            <div class="logo-container">
+                <img src="waffeehouse.png" alt="Waffee House Logo" class="logo-image">
+            </div>
+            <p class="tagline">Finest Waffles & Coffee</p>
         </header>
         
         <nav class="navigation">
             <div class="nav-grid">
                 <a href="#" class="nav-link website" onclick="openWebsite()">
-                    <div class="nav-icon">🌐</div>
+                    <div class="nav-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="2" y1="12" x2="22" y2="12"/>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                        </svg>
+                    </div>
                     <h3>Website</h3>
                     <p>Visit our main website</p>
                 </a>
-                <a href="#" class="nav-link website" onclick="openWhatsapp()">
-                    <div class="nav-icon">Whatsapp</div>
-                    <h3>Website</h3>
-                    <p>Order via Whatsapp/p>
+                
+                <a href="#" class="nav-link whatsapp" onclick="openWhatsapp()">
+                    <div class="nav-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                        </svg>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p>Order via WhatsApp</p>
                 </a>
                 
                 <a href="#" class="nav-link menu" onclick="openMenu()">
-                    <div class="nav-icon">📋</div>
+                    <div class="nav-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 12h18M3 6h18M3 18h18"/>
+                        </svg>
+                    </div>
                     <h3>Menu</h3>
                     <p>View our delicious menu</p>
                 </a>
                 
                 <a href="#" class="nav-link review" onclick="openGoogleReview()">
-                    <div class="nav-icon">⭐</div>
+                    <div class="nav-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                        </svg>
+                    </div>
                     <h3>Google Review</h3>
                     <p>Leave us a review</p>
                 </a>
                 
                 <a href="#" class="nav-link instagram" onclick="openInstagram()">
-                    <div class="nav-icon">📸</div>
+                    <div class="nav-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                        </svg>
+                    </div>
                     <h3>Instagram</h3>
                     <p>Follow us on Instagram</p>
                 </a>
@@ -48,7 +75,7 @@
         </nav>
         
         <footer>
-            <p>&copy; 2024 QR Waffee House. All rights reserved.</p>
+            <p>&copy; 2025 QR Waffee House. All rights reserved.</p>
         </footer>
     </div>
     

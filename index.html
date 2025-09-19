@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Waffle House</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="logo">QR Waffee House</h1>
+            <p class="tagline">Delicious Waffles & More</p>
+        </header>
+        
+        <nav class="navigation">
+            <div class="nav-grid">
+                <a href="#" class="nav-link website" onclick="openWebsite()">
+                    <div class="nav-icon">🌐</div>
+                    <h3>Website</h3>
+                    <p>Visit our main website</p>
+                </a>
+                
+                <a href="#" class="nav-link menu" onclick="openMenu()">
+                    <div class="nav-icon">📋</div>
+                    <h3>Menu</h3>
+                    <p>View our delicious menu</p>
+                </a>
+                
+                <a href="#" class="nav-link review" onclick="openGoogleReview()">
+                    <div class="nav-icon">⭐</div>
+                    <h3>Google Review</h3>
+                    <p>Leave us a review</p>
+                </a>
+                
+                <a href="#" class="nav-link instagram" onclick="openInstagram()">
+                    <div class="nav-icon">📸</div>
+                    <h3>Instagram</h3>
+                    <p>Follow us on Instagram</p>
+                </a>
+            </div>
+        </nav>
+        
+        <footer>
+            <p>&copy; 2024 QR Waffee House. All rights reserved.</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,12 +1,24 @@
+/* CSS Reset for better cross-browser compatibility */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     background: #FF6B6B; /* Coral-red background matching logo */
+    background-color: #FF6B6B; /* Fallback for older browsers */
     min-height: 100vh;
     color: #333;
     overflow-x: hidden;
@@ -59,19 +71,41 @@ header {
     max-width: 800px;
 }
 
+/* Fallback for browsers that don't support CSS Grid */
+@supports not (display: grid) {
+    .nav-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .nav-link {
+        flex: 0 0 calc(50% - 12.5px);
+        margin: 12.5px;
+    }
+    
+    @media (max-width: 480px) {
+        .nav-link {
+            flex: 0 0 100%;
+            margin: 7.5px 0;
+        }
+    }
+}
+
 .nav-link {
     background: rgba(255, 255, 255, 0.95);
+    background-color: rgba(255, 255, 255, 0.95); /* Fallback */
     border-radius: 16px;
     padding: 35px 25px;
     text-decoration: none;
     color: #333;
     text-align: center;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.3s ease; /* Simplified transition for better compatibility */
     box-shadow: 0 8px 25px rgba(0,0,0,0.1);
     position: relative;
     overflow: hidden;
-    backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
+    /* backdrop-filter removed for better compatibility */
 }
 
 .nav-link::before {
@@ -93,6 +127,7 @@ header {
     transform: translateY(-8px);
     box-shadow: 0 20px 40px rgba(0,0,0,0.15);
     background: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 1); /* Fallback */
 }
 
 .nav-icon {
@@ -273,7 +308,4 @@ footer p {
 .nav-link:nth-child(4) { animation-delay: 0.4s; }
 .nav-link:nth-child(5) { animation-delay: 0.5s; }
 
-/* Loading state */
-.nav-link {
-    opacity: 0;
-}
+/* Loading state - removed conflicting opacity rule */

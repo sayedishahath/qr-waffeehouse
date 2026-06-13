@@ -14,9 +14,8 @@ function openWhatsapp() {
 
 // Function to open menu PDF
 function openMenu() {
-    // Open the PDF menu file
-    const menuUrl = 'https://app.qaayima.com/restaurant/waffeehousesharjah';
-    window.open(menuUrl);
+    const menuUrl = encodeURI('Wafee House menu.pdf');
+    window.open(menuUrl, '_blank');
 }
 
 // Function to open Google Reviews
